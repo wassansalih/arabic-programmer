@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arabic-programmer/static/css/main.073c9b0a.css",
+    "main.js": "/arabic-programmer/static/js/main.5f25417f.js",
+    "static/js/787.6ee1ae34.chunk.js": "/arabic-programmer/static/js/787.6ee1ae34.chunk.js",
+    "index.html": "/arabic-programmer/index.html",
+    "main.073c9b0a.css.map": "/arabic-programmer/static/css/main.073c9b0a.css.map",
+    "main.5f25417f.js.map": "/arabic-programmer/static/js/main.5f25417f.js.map",
+    "787.6ee1ae34.chunk.js.map": "/arabic-programmer/static/js/787.6ee1ae34.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5f25417f.js"
+  ]
+}

@@ -4,15 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './routes/Home';
-import Javascript from './routes/Javascript';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/arabic-programmer" element={<App />} />
-      <Route path="/arabic-programmer/home" element={<Home />} />
-      <Route path="/arabic-programmer/javascript" element={<Javascript />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

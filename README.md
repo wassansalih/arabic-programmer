@@ -1,2 +1,2 @@
-# The Arapic Programmer
+# The Arabic Programmer
 code learning

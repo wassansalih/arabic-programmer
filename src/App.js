@@ -1,15 +1,11 @@
 
-import './App.css';
-
-
 import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
       <h1>Main page</h1>
-      <nav>
+      {/* <nav>
           <ul>
             <li>
               <Link to= "/arabic-programmer/home">Home</Link>
@@ -18,9 +14,7 @@ function App() {
               <Link to="/arabic-programmer/javascript">Javascript</Link>
             </li>
           </ul>
-        </nav>
-
-      </header>
+        </nav> */}
     </div>
   );
 }
