@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "unused-imports"
+    ],
+    "rules": {
+        "quotes": ["ERROR", "double", {"avoidEscape": true, "allowTemplateLiterals": true}],
+        "no-console": "error",
+        "semi": [2, "always"],
+        "no-unused-vars": "error",
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		]
+    },
+    "overrides": [
+        {
+          "files": [
+            "**/*.test.js",
+            "**/*.test.jsx"
+          ],
+          "env": {
+            "jest": true
+          }
+        }
+      ],
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+}

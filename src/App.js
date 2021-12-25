@@ -1,9 +1,6 @@
 import Grid from '@mui/material/Grid';
 import HeaderTabs from "./components/HeaderTabs";
-import Javascript from './components/javascript/Javascript';
-import Linux from './components/linux/Linux';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { display } from '@mui/system';
 
 const theme = createTheme({
   components: {
@@ -77,10 +74,10 @@ function App() {
             justifyContent="center"
             alignItems="center"
           > */}
-            <Grid>
-              <HeaderTabs />
-            </Grid>
+          <Grid>
+            <HeaderTabs />
           </Grid>
+        </Grid>
         {/* </Grid> */}
       </Grid>
     </ThemeProvider>

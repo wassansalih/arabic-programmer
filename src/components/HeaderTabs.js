@@ -1,9 +1,10 @@
-import * as React from 'react';
-import { Tabs, Tab, Box, Typography } from '@mui/material';
-import Linux from './linux/Linux';
-import Javascript from './javascript/Javascript';
+import * as React from "react";
+import { Tabs, Tab, Box, Typography } from "@mui/material";
+import Linux from "./linux/Linux";
+import Javascript from "./javascript/Javascript";
 
 function TabPanel(props) {
+    // eslint-disable-next-line
     const { children, value, index } = props;
 
     return (
@@ -12,7 +13,7 @@ function TabPanel(props) {
             hidden={value !== index}
             id={`vertical-tabpanel-${index}`}
             aria-labelledby={`vertical-tab-${index}`}
-            style={{marginTop: "20px", float: "right"}}
+            style={{ marginTop: "20px", float: "right" }}
         >
             {value === index && (
                 <Box sx={{ p: 4 }}>
@@ -31,7 +32,7 @@ export default function HeaderTabs() {
     };
     const style = {
         // width: "100%",
-        bgcolor: 'background.paper',
+        bgcolor: "background.paper",
         border: "5px solid green",
     };
 
@@ -45,7 +46,7 @@ export default function HeaderTabs() {
                 aria-label="scrollable auto tabs"
                 textColor="secondary"
                 indicatorColor="secondary"
-                style={{float: "right"}}
+                style={{ float: "right" }}
             >
                 <Tab label="Spring boot" />
                 <Tab label="Vue" disabled />
