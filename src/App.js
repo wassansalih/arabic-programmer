@@ -1,18 +1,18 @@
-import Grid from '@mui/material/Grid';
+import * as React from "react";
+import Grid from "@mui/material/Grid";
 import HeaderTabs from "./components/HeaderTabs";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   components: {
     MuiGrid: {
       styleOverrides: {
         root: {
-          textAlign: "right",
           marginLeft: "5px",
+          direction: "rtl",
         },
         container: {
           width: "99%",
-          // marginLeft: "5px",
           marginTop: "10px",
           paddingLeft: "15px",
           paddingRight: "2px",
@@ -20,29 +20,7 @@ const theme = createTheme({
         },
 
       }
-    },
-    MuiTabs: {
-      flexContainer: {
-        float: "right"
-      }
     }
-    // MuiBox: {
-    //   styleOverrides: {
-    //     root: {
-    //       backgroundColor: "red",
-    //       border: " 5px solid red",
-    //       maxWidth: "60%"
-    //     }
-    //   }
-    // }
-
-    // MuiButton: {
-    //   styleOverrides: {
-    //     root: {
-    //       fontSize: '1rem',
-    //     },
-    //   },
-    // },
   },
 });
 
@@ -52,18 +30,18 @@ function App() {
       <Grid
         container
         direction="row-reverse"
-        justifyContent="flex-start"
+        justifyContent="flex-end"
         alignItems="flex-start"
         spacing={2}
       >
         <Grid xs={3}>
           <item>
-            <p>The Arabic Programmer</p>
+            <h3>The Arabic Programmer</h3>
           </item>
         </Grid>
         <Grid xs={12} MuiGrid>
           <item>
-            <p>The Arabic Programmer description xxxxxxxx</p>
+            <h4>The Arabic Programmer description xxxxxxxx</h4>
           </item>
         </Grid>
 
