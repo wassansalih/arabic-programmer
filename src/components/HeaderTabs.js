@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Tabs, Tab, Box, Typography } from "@mui/material";
 import LinuxTab from "./linux/LinuxTab";
 import JavascriptTab from "./javascript/JavascriptTab";

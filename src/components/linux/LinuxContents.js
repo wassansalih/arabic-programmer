@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export default function LinuxContents () {
     const contents = ["content 1", "content 2", "content 3", "content 4"];

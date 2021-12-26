@@ -1,28 +1,8 @@
-import * as React from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import HeaderTabs from "./components/HeaderTabs";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
-const theme = createTheme({
-  components: {
-    MuiGrid: {
-      styleOverrides: {
-        root: {
-          marginLeft: "5px",
-          direction: "rtl",
-        },
-        container: {
-          width: "99%",
-          marginTop: "10px",
-          paddingLeft: "15px",
-          paddingRight: "2px",
-          border: "1px solid blue"
-        },
-
-      }
-    }
-  },
-});
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./styles/App.style";
 
 function App() {
   return (
@@ -34,29 +14,22 @@ function App() {
         alignItems="flex-start"
         spacing={2}
       >
-        <Grid xs={3}>
+        <Grid item xs={12}>
           <item>
-            <h3>The Arabic Programmer</h3>
+            <h3 id="mainTitle">المبرمج العربي</h3>
           </item>
         </Grid>
-        <Grid xs={12} MuiGrid>
+        <Grid item xs={12} MuiGrid>
           <item>
-            <h4>The Arabic Programmer description xxxxxxxx</h4>
+            <h4 id="secondaryTitle">The Arabic Programmer description will be here</h4>
           </item>
         </Grid>
 
         <Grid item xs={12}>
-          {/* <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          > */}
           <Grid>
             <HeaderTabs />
           </Grid>
         </Grid>
-        {/* </Grid> */}
       </Grid>
     </ThemeProvider>
 

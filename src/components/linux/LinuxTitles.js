@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export default function LinuxTitles () {
     const titles = ["title 1", "title 2", "title 3", "title 44444444444444444444"];
