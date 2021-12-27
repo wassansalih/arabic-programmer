@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import App from "../App";
 import { ThemeProvider } from "@mui/material/styles";
-import HeaderTabs from "../components/HeaderTabs";
+import HeaderTabs from "../components/headerTabs/HeaderTabs";
 import { theme } from "../styles/App.style";
 
 let wrapper;
@@ -13,7 +13,6 @@ describe("App", () => {
   });
 
   it("should render the Page", () => {
-    wrapper = shallow(<App />);
     expect(wrapper).toBeTruthy();
   });
 

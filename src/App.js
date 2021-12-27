@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import HeaderTabs from "./components/HeaderTabs";
+import HeaderTabs from "./components/headerTabs/HeaderTabs";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./styles/App.style";
 
@@ -32,7 +32,6 @@ function App() {
         </Grid>
       </Grid>
     </ThemeProvider>
-
 
   );
 }
